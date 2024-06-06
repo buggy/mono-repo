@@ -31,12 +31,11 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "pretty": "prettier . --write",
-    "test": "turbo test",
-    "prepare": "husky"
+    "test": "turbo test"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "prettier": "^3.2.5",
-    "turbo": "^1.13.3"
+    "turbo": "^2.0.1"
   }
 }
