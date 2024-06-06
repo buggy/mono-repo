@@ -2,6 +2,7 @@
   "name": "mono-repo-template",
   "version": "0.0.1",
   "private": true,
+  "packageManager": "^npm@10.5.2",
   "description": "My mono repo template",
   "keywords": [],
   "homepage": "https://www.richdevelops.dev/",
@@ -35,7 +36,7 @@
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.1",
     "turbo": "^2.0.1"
   }
 }
