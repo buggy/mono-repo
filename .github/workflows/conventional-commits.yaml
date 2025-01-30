@@ -1,0 +1,35 @@
+name: Conventional Commits
+
+on:
+  pull_request:
+    branches:
+      - develop
+    types:
+      - opened
+      - edited
+      - synchronize
+
+env:
+  DO_NOT_TRACK: 1
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  pull-requests: read
+
+jobs:
+  main:
+    name: PR title check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: amannn/action-semantic-pull-request@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          scopes: |
+            deps
+            deps-dev
+          requireScope: false
+          wip: true
