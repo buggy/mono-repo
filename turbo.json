@@ -5,21 +5,20 @@
       "cache": false
     },
     "dev": {
+      "dependsOn": ["^dev"],
       "cache": true,
       "persistent": true
     },
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist"]
+      "dependsOn": ["^build"]
     },
     "lint": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^lint"]
     },
-    "pretty": {
-      "dependsOn": ["^build"]
+    "lint:check": {
+      "dependsOn": ["^lint:check"]
     },
     "test": {
-      "outputs": ["coverage/**"],
       "dependsOn": ["^test"]
     }
   }
