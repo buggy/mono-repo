@@ -8,6 +8,12 @@ A basic mono repo template using
 - [eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 
+## Repository Setup
+
+### Dependabot
+
+Dependabot has been configured by default. You will get a warning if you don't have a `dependencies` label for PR's.
+
 ## Commands
 
 ### build
