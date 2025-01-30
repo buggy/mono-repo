@@ -31,7 +31,9 @@
     "clean": "turbo clean",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "lint:check": "turbo lint:check",
     "pretty": "prettier . --write",
+    "pretty:check": "prettier . --check",
     "test": "turbo test"
   },
   "devDependencies": {
